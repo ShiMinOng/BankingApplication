@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.softra.bankingapplication.exceptions.AccountNotFoundException;
+import com.softra.bankingapplication.exceptions.OwnAccountException;
 import com.softra.bankingapplication.exceptions.PayeeNotFoundException;
 import com.softra.bankingapplication.models.Payee;
 import com.softra.bankingapplication.models.PayeeService;
@@ -27,7 +29,7 @@ public class PayeeController {
 	}
 	
 	@PostMapping("/payees")
-	public Payee createPayee(@RequestBody Map<String, Object> beforeMap) {
+	public Payee createPayee(@RequestBody Map<String, Object> beforeMap) throws OwnAccountException, AccountNotFoundException  {
 		System.out.println(beforeMap);
 		int payeracctid = Integer.parseInt(beforeMap.get("accountId").toString());
 		int payeeacctid = Integer.parseInt(beforeMap.get("payeeAccountID").toString());
