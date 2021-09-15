@@ -39,8 +39,8 @@ public class FundTransferController {
 		 Date date = new Date();
 		 double amount = Double.parseDouble(requestBody.get("amount").toString());
 		 FundTransfer ft = new FundTransfer(payerId,payeeId,date,amount);
-		 ftService.save(ft);
 		 ftService.transferFunds(payerId, payeeId, amount);
+		 ftService.save(ft);
 		 
 	}
 }
