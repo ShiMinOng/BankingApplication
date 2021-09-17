@@ -13,27 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 @Component
 public class CreateUsers {
 	
-//		User adminUser = new User("Peh", "12345", "Some Secret Question", "12345", false, "ADMIN");
-//		User custUser1 = new User("John", "54321", "What is your favourite Animal", "54321", false, "CUSTOMER");
-//		User custUser2 = new User("James", "32121", "What is your favourite colour", "32121", false, "CUSTOMER");
-//		System.out.println("Inside 1");
-//		userdao.save(adminUser);
-//		System.out.println(adminUser);
-//		userdao.save(custUser1);
-//		userdao.save(custUser2);
-//		
-//		Customer c1 = new Customer(custUser1.getUserId(), "Johnny", "smth@gmail.com", "11 Springleaf Drive");
-//		Customer c2 = new Customer(custUser2.getUserId(), "James", "everything@gmail.com", "31 Park Villas Rise");
-//		System.out.println("Inside 2");
-//		custdao.save(c1);
-//		custdao.save(c2);
-//		
-//		Account acct1 = new Account("Savings", 500.00, new Date(), custUser1.getUserId());
-//		Account acct2 = new Account("Savings", 1000.00, new Date(), custUser2.getUserId());
-//		System.out.println("Inside 3");
-//		acctdao.save(acct1);
-//		acctdao.save(acct2);
-	
 	public Map<String, Object> create1() {
 		Map<String, Object> map = new HashMap<>();
 		map.put("username", "Peh");
