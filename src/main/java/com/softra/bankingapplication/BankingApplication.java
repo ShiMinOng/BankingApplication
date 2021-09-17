@@ -44,7 +44,7 @@ public class BankingApplication {
 		Map<String, Object> map2 = cu.create2();
 		Map<String, Object> map3 = cu.create3();
 		
-		//PLEASE COMMENT LINES 45 TO 47 AFTER THE FIRST RUN!!!!!!!!!!!!!
+		//PLEASE COMMENT LINES 48 TO 50 AFTER THE FIRST RUN!!!!!!!!!!!!!
 		consumePostRestApis(template, map1);
 		consumePostRestApis(template, map2);
 		consumePostRestApis(template, map3);
