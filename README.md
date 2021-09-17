@@ -10,7 +10,7 @@ spring.datasource.password=
 - This banking application assumes that one user can only have 1 account
 - Funds in the account are only available via inter-account transfer within the same bank or deposit upon account creation
 ## Extra
-- The source codes populates the database tables on the first run. However, the following lines (lines 45 to 47 in *BankingApplication.java*) should be commented after the first run
+- The source codes populates the database tables on the first run. However, the following lines (lines 48 to 50 in *BankingApplication.java*) should be commented after the first run
 ```
 consumePostRestApis(template, map1);
 consumePostRestApis(template, map2);
