@@ -9,10 +9,10 @@ spring.datasource.password=
 ## Limitations
 - This banking application assumes that one user can only have 1 account
 - Funds in the account are only available via inter-account transfer within the same bank or deposit upon account creation
-```
+
 ## ER Diagrams
 - ER_Diagrams.png has been attached to show the relationships from one database table to another
-```
+
 ## Extra
 - The source codes populates the database tables on the first run. However, the following lines (lines 48 to 50 in *BankingApplication.java*) should be commented after the first run
 ```
